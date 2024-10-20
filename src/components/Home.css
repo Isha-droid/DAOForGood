@@ -1,0 +1,36 @@
+.featureBox {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 12px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    text-align: center; 
+}
+
+.featureBox:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.featureTitle {
+    font-size: 1.6rem; /* Slightly larger font size */
+    color: #000066; /* Dark blue title color */
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.featureBox p {
+    font-size: 1rem; /* Font size for descriptions */
+    color: #333; /* Dark gray for better readability */
+    line-height: 1.5; /* Spacing between lines for readability */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .featureTitle {
+        font-size: 1.4rem; /* Adjust title size on smaller screens */
+    }
+    .featureBox {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+}
